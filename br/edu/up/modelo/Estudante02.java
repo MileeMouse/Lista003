@@ -35,13 +35,12 @@ public class Estudante02 {
         return NotaExameFinal;
     }
 
-    static double CalcNota(Estudante estudante) {
-    double notaLaboratorio = estudante.getNotaLaboratorio();
-    double notaAvaliacaoSemestral = estudante.getNotaAvaliacaoSemestral();
-    double notaExameFinal = estudante.getNotaExameFinal();
-
-    
-    return (notaLaboratorio * 2 + notaAvaliacaoSemestral * 3 + notaExameFinal * 5) / 10;
+    public static double NotaFinal(Estudante02 estudante) {
+        double notaLaboratorio = estudante.getNotaLaboratorio();
+        double notaAvaliacaoSemestral = estudante.getNotaAvaliacaoSemestral();
+        double notaExameFinal = estudante.getNotaExameFinal();
+        
+        return (notaLaboratorio * 2 + notaAvaliacaoSemestral * 3 + notaExameFinal * 5) / 10;
 }
 
     public static char calcularClassificacao(double notaFinal) {

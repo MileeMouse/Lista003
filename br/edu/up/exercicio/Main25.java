@@ -24,7 +24,7 @@ public class Main25 {
 
         Estudante02 estudante = new Estudante02(nome, matricula, notaLaboratorio, notaAvaliacaoSemestral, notaExameFinal);
 
-        double notaFinal = Estudante02.CalcNota(estudante);
+        double notaFinal = estudante.NotaFinal(estudante);
         char classificacao = Estudante02.calcularClassificacao(notaFinal);
 
         System.out.println("Nome: " + estudante.getNome());
